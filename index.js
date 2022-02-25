@@ -1,5 +1,10 @@
-const Game = require('./game');
+const Game = require('./bussines/game');
 
-const game = new Game();
+function main(){
+  const game = new Game();  
+  game.beginGame();
+  console.log("Bienvenido al juego de triqui avanzado");
+  game.showBoard();
+};
 
-game.beginGame();
+main();
